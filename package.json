@@ -10,9 +10,14 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "link:../../project/workers-sdk/packages/vitest-pool-workers",
+    "@cloudflare/vitest-pool-workers": "^0.8.58",
     "typescript": "^5.0.4",
     "vitest": "~3.2.0",
     "wrangler": "^4.24.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@cloudflare/vitest-pool-workers": "link:../wrangler2/packages/vitest-pool-workers"
+    }
   }
 }

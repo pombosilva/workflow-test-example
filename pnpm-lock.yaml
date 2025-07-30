@@ -4,13 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@cloudflare/vitest-pool-workers': link:../wrangler2/packages/vitest-pool-workers
+
 importers:
 
   .:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
-        specifier: link:../../project/workers-sdk/packages/vitest-pool-workers
-        version: link:../../project/workers-sdk/packages/vitest-pool-workers
+        specifier: link:../wrangler2/packages/vitest-pool-workers
+        version: link:../wrangler2/packages/vitest-pool-workers
       typescript:
         specifier: ^5.0.4
         version: 5.8.3
