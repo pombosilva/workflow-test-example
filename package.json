@@ -17,7 +17,8 @@
   },
   "pnpm": {
     "overrides": {
-      "@cloudflare/vitest-pool-workers": "link:../wrangler2/packages/vitest-pool-workers"
+      "@cloudflare/vitest-pool-workers": "link:../workers-sdk/packages/vitest-pool-workers",
+      "wrangler": "link:../workers-sdk/packages/wrangler"
     }
   }
 }

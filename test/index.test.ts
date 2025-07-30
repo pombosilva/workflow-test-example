@@ -7,8 +7,8 @@ it("should test my introspection", async () => {
     "test-instance-id"
   );
 
-  instance.modify((m) => {
-    m.disableSleeps();
+  await instance.modify(async (m) => {
+    await m.disableSleeps();
     m.mockStepImplementation({ name: "a" });
   });
 
